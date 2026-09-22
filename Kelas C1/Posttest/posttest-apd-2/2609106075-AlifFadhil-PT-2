@@ -1,0 +1,34 @@
+komponen_1 = 120000 
+komponen_2 = 135000 
+komponen_3 = 150000
+komponen_4 = 175000
+komponen_5 = 200000
+komponen_6 = 220000
+biaya_administrasi = 15000
+
+harga_komponen = [komponen_1, komponen_2, komponen_3, komponen_4, komponen_5, komponen_6]
+total_biaya = komponen_1 + komponen_2 + komponen_3 + komponen_4 + komponen_5 + komponen_6 + biaya_administrasi
+
+kurs_gbp = 20500
+total_biaya_gbp = total_biaya / kurs_gbp
+
+rata_rata = total_biaya / len(harga_komponen)
+
+nim = 75
+bolean = nim != rata_rata
+
+print("Bengkel Maju Mapan")
+print("Harga Komponen (List) :")
+for harga in harga_komponen:
+    print(f"- {harga}")
+print("Biaya Administrasi    :", biaya_administrasi)
+print("Total Biaya (IDR)     : Rp.", total_biaya)
+print("Total Biaya (GBP)     : GBP.", total_biaya_gbp)
+print("Rata-rata Biaya       : Rp.", rata_rata)
+print("NIM                   :", nim)
+print("Boolean               :", bolean)
+
+print("Terima kasih telah belanja dengan kami!")
+
+print("Poin Plusnya :")
+print("Slice Komponen 1 - 4  :", harga_komponen[-6:-2])
