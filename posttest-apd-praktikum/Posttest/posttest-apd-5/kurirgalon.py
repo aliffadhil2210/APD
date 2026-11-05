@@ -11,6 +11,7 @@ galon = [
     ["Le Minerale", 19000, 8],
     ["Club", 18000, 5],
     ["Vit", 17000, 0],
+    ["Cleo", 25000, 1]
 ]
 # daftar kurirnya: [nama, status]
 kurir = [
